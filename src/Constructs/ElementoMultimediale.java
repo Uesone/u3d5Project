@@ -1,4 +1,13 @@
 package Constructs;
+//classe astratta
+public abstract class ElementoMultimediale {
+    protected String titolo;
 
-public class ElementoMultimediale {
+    public ElementoMultimediale(String titolo) {
+        this.titolo = titolo;
+    }
+
+    public String getTitolo() {
+        return titolo;
+    }
 }
