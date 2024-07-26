@@ -1,9 +1,10 @@
 package Entities;
 import Constructs.ElementoMultimediale;
 
-/**
- * Rappresenta un'immagine con un titolo e una luminosità regolabile.
- */
+
+
+
+
 public class Immagine extends ElementoMultimediale {
     private int luminosita;
 
@@ -28,10 +29,15 @@ public class Immagine extends ElementoMultimediale {
         }
     }
 
-    /**
-     * Mostra l'immagine con il titolo e una serie di asterischi rappresentanti il livello di luminosità.
-     */
     public void show() {
         System.out.println(titolo + " " + "*".repeat(luminosita));
+    }
+
+    /**
+     * Esegue l'immagine
+     */
+    @Override
+    public void esegui() {
+        show();
     }
 }

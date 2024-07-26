@@ -1,5 +1,8 @@
 package Constructs;
-//classe astratta
+
+/**
+ * Classe astratta
+ */
 public abstract class ElementoMultimediale {
     protected String titolo;
 
@@ -10,4 +13,6 @@ public abstract class ElementoMultimediale {
     public String getTitolo() {
         return titolo;
     }
+
+    public abstract void esegui();
 }
